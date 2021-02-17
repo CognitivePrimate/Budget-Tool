@@ -1,6 +1,3 @@
-// console.log("Hello!");
-
-// selectors
 let updateBudgetButton = document.querySelector("#update_budget");
 let addExpenseButton = document.querySelector("#add_expense");
 let monthlyBudget = document.querySelector("#monthly_budget");

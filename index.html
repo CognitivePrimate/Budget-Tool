@@ -1,73 +1,46 @@
 <!DOCTYPE html>
-<header>
-    <meta name="viewport"  content="width=device-width, initial-scale=1.0"/>
-    <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="style.css"/>
-    <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
-    <title>Jackson-Part-One</title>
-</header>
-<body>
-    <div class="topLineMenu">
-        <div id="leftHead">
-            <img src="assets/ccc.svg" alt="CCC logo"/>
-        </div>
-        <div class="topLineButtons">
-            <ul>
-                <a href="#coffee"><li>Coffee</li></a>
-                <a href="#cream"><li>Cream</li></a>
-                <a href="#cookies"><li>Cookies</li></a>
-            </ul>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="styles.css" rel="stylesheet"/>
+        <title>My Budget App</title>
+
+    </head>
+    <body>
+        <main>
+            <section id="monthly_budget_section">
+                <h1>Monthly Budget:</h1>
+                <p id="monthly_budget"></p>
+                <form>
+                    <input type="number" id="income_input" placeholder="Monthly Income"/>
+                    <button id="update_budget">Update Budget</button>
+                </form>
+            </section>
+
+            <section id="add_expense_section">
+                <h1>Add Expense</h1>
+                <form>
+                    <input type="text" id="name_input" placeholder="Expense Name"/>
+                    <input type="number" id="amount_input" placeholder="Expense Amount"/>
+                    <button id="add_expense">Add Expense</button>
+                </form>
+            </section>
+            <section id="expense_list_section"></section>
+                <h1>Monthly Expenses:</h1>
+                <div id="expense_list"></div>
+            <section id="expense_total_section"></section>
+                <h1>Total Expenses:</h1>
+                <p id="total_expenses"></p>
             
-        </div>
-    </div>
+            <section id="remaining_balance_section"></section>
+                <h1>Remaining Balance:</h1>
+                <p id="remaining_balance"></p>
 
-    <div class="headP">
-        <img src="assets/food-truck.svg" alt="ice cream truck" id="iceCreamTruck"/>
-        <div id="aboutP">
-            <h1 id="headPHead">ABOUT</h1>
-            <p id="headPP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>      
-    </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
 
-    <div class="cardBox">
-        <div class="card">
-            <div>
-                <h1 class="cardHead" id="coffee">Coffee</h1>
-            </div>
-            <div class="cardImg">
-                <img src="assets/coffee.svg" alt="coffee cup"/>
-            </div>
-            <div class="menuLinkButton">
-                <a href="#">View Menu</a>
-            </div>
-        </div>    
-                
-        <div class="card">
-            <div>
-                <h1 class="cardHead" id="cream">Cream</h1>
-            </div>
-            <div class="cardImg">
-                <img src="assets/cream.svg" alt="ice cream"/>
-            </div>
-                 <div class="menuLinkButton">
-                    <a href="#">View Menu</a>
-            </div>
-        </div>        
 
-        <div class="card">
-            <div>
-                <h1 class="cardHead" id="cookies">Cookies</h1>
-            </div>
-            <div class="cardImg">
-                <img src="assets/cookie.svg" alt="cookie"/>
-            </div>
-            <div class="menuLinkButton">
-                <a href="#">View Menu</a>
-            </div>
-        </div>    
 
-    </div>
-</body>
+</html>
